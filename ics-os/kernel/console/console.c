@@ -761,6 +761,15 @@ int console_execute(const char *str){
       };
       console_ls(style, ordering);
    }else
+   if (strcmp(u,"add") == 0){
+      //-- Adds two integers. Args: <num1> <num2>
+      int a, b;
+      u = strtok(0," ");
+      a = atoi(u);
+      u = strtok(0," ");
+      b = atoi(u);
+      printf("%d + %d = %d\n",a,b,a+b);
+}else
    if (strcmp(u,"del") == 0){             //-- Deletes a files or directory. Args: <filename/dirname>
       int res;
       u=strtok(0," ");

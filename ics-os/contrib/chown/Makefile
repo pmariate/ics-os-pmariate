@@ -1,4 +1,4 @@
-NAME=hello
+NAME=chown
 
 SRC=$(NAME).c
 EXE=$(NAME).exe
